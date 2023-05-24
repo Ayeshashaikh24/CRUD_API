@@ -21,6 +21,9 @@ const productRoutes = require("./routes/product");
 
 // Middlewares
 app.use(express.json());
+
+
+app.use('/api', require("./Routes/Createuser"))
 app.use(cors());
 
 // route Middlewares
